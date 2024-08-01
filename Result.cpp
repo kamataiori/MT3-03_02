@@ -2,7 +2,6 @@
 
 void Result::Initialize()
 {
-
 }
 
 void Result::Update()

@@ -48,12 +48,6 @@ public:
 
 
 
-
-
-
-
-
-
 	void Initialize();
 
 	void Update();
@@ -61,22 +55,4 @@ public:
 	void Draw();
 };
 
-Vector3 operator+(Vector3& v1, Vector3& v2) { return Add(v1, v2); }
-
-Vector3 operator-(Vector3& v1, Vector3& v2) { return Subtract(v1, v2); }
-
-Vector3 operator*(float s, Vector3& v) { return Multiply(s, v); }
-
-Vector3 operator*(Vector3& v, float s) { return s * v; }
-
-Vector3 operator/(Vector3& v, float s) { return Multiply(1.0f / s, v); }
-
-Matrix4x4 operator+(Matrix4x4& m1, Matrix4x4& m2) { return Add(m1, m2); }
-
-Matrix4x4 operator-(Matrix4x4& m1, Matrix4x4& m2) { return Subtract(m1, m2); }
-
-Matrix4x4 operator*(Matrix4x4& m1, Matrix4x4& m2) { return Multiply(m1, m2); }
-
-Vector3 operator-(Vector3& v) { return { -v.x,-v.y,-v.z }; }
-Vector3 operator+(Vector3& v) { return v; }
 
