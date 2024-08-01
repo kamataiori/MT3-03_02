@@ -30,7 +30,7 @@ void MainLoop::Initialize()
 	result_->Initialize();
 }
 
-void MainLoop::Updata() { result_->Updata(); }
+void MainLoop::Updata() { result_->Update(); }
 
 void MainLoop::Draw() { result_->Draw(); }
 
